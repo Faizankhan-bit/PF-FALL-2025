@@ -1,0 +1,29 @@
+#include<stdio.h>
+ int findsqrt(int x);
+ 
+int main(){              // LeetCode sqrt(x)
+	int n;
+	scanf("%d",&n);
+	printf("%d",findsqrt(n));
+	
+	return 0;
+}
+int findsqrt(int x) {
+    int i=1;
+    while (1){
+       
+	    int square= i * i;
+        
+        if(x==square){
+           
+		    return i;
+		    
+        }else if(square>x){
+           
+		    return i-1;
+		    
+        }
+        i++;
+
+    } 
+ }
